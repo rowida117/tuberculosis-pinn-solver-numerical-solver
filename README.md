@@ -163,32 +163,26 @@ yₙ₊₁ ≈ yₙ + f(yₙ) × dt
 
 ##  References
 
-[1] Schiesser, W. E. (2014). Differential equation analysis in biomedical
-science and engineering. 
-[2] Applied Numerical Methods with Python for Engineers and Scientists
-(1st ed.). (2021). McGraw-Hill Higher Education. 
-[3] S. Kanwal, M. K. Siddiqui, E. Bonyah, K. Sarwar, T. S. Shaikh, and
-N. Ahmed, “Analysis of the epidemic biological model of tuberculosis
-(TB) via numerical schemes,” Complexity, vol. 2022, Art. ID 5147951,
-13 pp., Mar. 2022, doi: 10.1155/2022/5147951.
-[4] E. D. Tadesse, M. A. Bhat, and A. Ayele, “A deterministic compartment model for analyzing tuberculosis dynamics considering vaccination and reinfection,” Heliyon, vol. 9, no. 10, p. e19674, 2023, doi:
-10.1016/j.heliyon.2023.e19674
-[5] S. Side, A. M. Utami, S. Sukarna, and M. I. Pratama, “Numerical
-solution of SIR model for transmission of tuberculosis by Runge–Kutta
-method, Journal of Physics: Conference Series, vol. 1040, p. 012021,
-2018
-[6] Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2017). Physics Informed
-Deep Learning (Part I): Data-driven solutions of nonlinear partial
-differential equations. arXiv (Cornell University).
-[7] Rasheed, A. (2024). Modeling Dynamical Systems with
-Physics Informed Neural Networks with Applications to PDEConstrained Optimal Control Problems. https://ntnuopen.ntnu.no/ntnuxmlui/handle/11250/3130805?show=full
-[8] Pal, B., Rahaman, R., et.al. (2025). A deep learning approach to model
-and predict tuberculosis using PINNs. 
-[9] Lu, L., Meng, X., Mao, Z., & Karniadakis, G. E. (2019). DeepXDE: A
-deep learning library for solving differential equations. arXiv.
-[10] Walters, S. J., Turner, R. J., & Forbes, L. K. (2022). A COMPARISON
-OF EXPLICIT RUNGE–KUTTA METHODS. The ANZIAM Journal,
-64(3), 227–249.
+[1] Schiesser, W. E. (2014). Differential equation analysis in biomedical science and engineering. 
+
+[2] Applied Numerical Methods with Python for Engineers and Scientists(1st ed.). (2021). McGraw-Hill Higher Education. 
+
+[3] S. Kanwal, M. K. Siddiqui, E. Bonyah, K. Sarwar, T. S. Shaikh, andN. Ahmed, “Analysis of the epidemic biological model of tuberculosis(TB) via numerical schemes,” Complexity, vol. 2022, Art. ID 5147951,13 pp., Mar. 2022, doi: 10.1155/2022/5147951.
+
+[4] E. D. Tadesse, M. A. Bhat, and A. Ayele, “A deterministic compartment model for analyzing tuberculosis dynamics considering vaccination and reinfection,” Heliyon, vol. 9, no. 10, p. e19674, 2023, doi:10.1016/j.heliyon.2023.e19674
+
+[5] S. Side, A. M. Utami, S. Sukarna, and M. I. Pratama, “Numerical solution of SIR model for transmission of tuberculosis by Runge–Kutta method, Journal of Physics: Conference Series, vol. 1040, p. 012021,2018
+
+[6] Raissi, M., Perdikaris, P., & Karniadakis, G. E. (2017). Physics Informed Deep Learning (Part I): Data-driven solutions of nonlinear partial differential equations. arXiv (Cornell University).
+
+[7] Rasheed, A. (2024). Modeling Dynamical Systems with Physics Informed Neural Networks with Applications to PDEConstrained Optimal Control Problems.https://ntnuopen.ntnu.no/ntnuxmlui/handle/11250/3130805?show=full
+
+[8] Pal, B., Rahaman, R., et.al. (2025). A deep learning approach to model and predict tuberculosis using PINNs. 
+
+[9] Lu, L., Meng, X., Mao, Z., & Karniadakis, G. E. (2019). DeepXDE: A deep learning library for solving differential equations. arXiv.
+
+[10] Walters, S. J., Turner, R. J., & Forbes, L. K. (2022). A COMPARISON OF EXPLICIT RUNGE–KUTTA METHODS. The ANZIAM Journal,64(3), 227–249.
+
 - Cairo University Numerical Methods materials (Spring 2025)
 
 
