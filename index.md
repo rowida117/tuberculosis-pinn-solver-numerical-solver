@@ -83,9 +83,7 @@ Two solution methods were implemented:
 
 Each Python script contains a solver implementation for one of the numerical methods used in this study, with consistent function structures and outputs and plots for modular testing and comparison
 
-##  [View the GitHub Page](https://rowida117.github.io/tuberculosis-pinn-solver-numerical-solver/)
 
-Live interactive summary hosted with GitHub Pages.
 
 ---
 ## Trials 
