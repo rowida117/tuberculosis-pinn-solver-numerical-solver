@@ -23,7 +23,7 @@ We modeled the spread and progression of TB using a system of four ODEs represen
 - **L(t)**: Latent or partially treated individuals
 
 Two solution methods were implemented:
-1. **Numerical integration methods** (e.g., Runge-Kutta-Fehlberg, Heun’s Method, Gauss Quadrature)
+1. **Numerical integration methods** (e.g., Runge-Kutta-Fehlberg, Heun’s Method)
 2. **Physics-Informed Neural Network (PINN)** trained using PyTorch
 
 ---
