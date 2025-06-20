@@ -42,14 +42,12 @@ Two solution methods were implemented:
 
 ## Results
 
-## Results Summary
-
 | Method       | Most Accurate      | Fastest Execution   | Extrapolation Support |
 |--------------|--------------------|----------------------|------------------------|
-| Heun         | ❌                 | ⚡ Fast               | ❌                     |
-| RK4          | ✅ Very Accurate   | Moderate               | ❌                     |
-| Adaptive RK  | ✅ Accurate        | ⚡⚡ Fastest           | ❌                     |
-| PINN         | ✅ Accurate        | ⚡ Fast (post-training) | ✅ YES                |
+| Heun         |  ✗                |  Fast                   | ✗                    |
+| RK4          | ✓ Very Accurate   | Moderate               | ✗                    |
+| Adaptive RK  | ✓ Accurate        |  Fastest               | ✗                    |
+| PINN         | ✓ Accurate        | Fast (post-training)    | ✓YES                |
 
 ###  Mean Squared Error (MSE) per Method:
 
@@ -70,11 +68,17 @@ Two solution methods were implemented:
 ##  Files
 
 📁 adaptive_quad/              → Contains `adaptive_quad.py` – Adaptive Quadrature integration method
+
 📁 figures/                    → Plots and result visualizations (MSE curves, method comparisons, etc.)
+
 📁 gauss-methods/              → Contains `gauss_methods.py` – Gauss quadrature-based solver
+
 📁 heun_non_self_start/        → Contains `heun_non_self_start.py` – Heun’s method for solving ODEs
+
 📁 romberg_integration/        → Contains `romberg_integration.py` – Romberg integration-based solver
+
 📁 runge-kutta-method/         → Contains `runge_kutta_method.py` – Classic 4th order Runge-Kutta method
+
  Numerical_Project_Full.ipynb → Jupyter notebook version that includes all code and result analysis
 
 Each Python script contains a solver implementation for one of the numerical methods used in this study, with consistent function structures and outputs and plots for modular testing and comparison
@@ -84,6 +88,60 @@ Each Python script contains a solver implementation for one of the numerical met
 Live interactive summary hosted with GitHub Pages.
 
 ---
+## Trials 
+
+##  Attempted Method: Romberg Integration
+
+###  What is Romberg Integration?
+
+Romberg Integration is a numerical method used to estimate definite integrals with high precision. It combines the **Trapezoidal Rule** with **Richardson Extrapolation** to refine the accuracy of the result over successive approximations.
+
+It starts from the basic trapezoidal estimate:
+
+```
+Tₙ = (h / 2) × [f(a) + 2 × ∑ f(xᵢ) + f(b)]
+```
+
+Then applies Richardson extrapolation recursively to eliminate lower-order error terms:
+
+```
+R(n, m) = [4ᵐ × R(n, m−1) − R(n−1, m−1)] / (4ᵐ − 1)
+```
+
+This builds a Romberg table where the bottom-right value is the most accurate approximation of the integral.
+
+---
+
+###  Why Romberg Integration Did Not Work in Our Case
+
+Although Romberg is powerful for integrating functions of a single variable (usually time), it is **not suitable** for our TB ODE model because:
+
+- Our ODE system has the form:
+
+```
+dy/dt = f(y)
+```
+
+  where **`f(y)` does not depend on time `t`** explicitly.
+
+- Romberg Integration is most effective when integrating:
+
+```
+∫ f(t) dt
+```
+
+  with function values changing significantly over `t`.
+
+- In our model, since the right-hand side `f(y)` is independent of `t`, the integration essentially becomes:
+
+```
+yₙ₊₁ ≈ yₙ + f(yₙ) × dt
+```
+
+  which reduces to **Euler’s method**, but with **extra computational cost** and **no added accuracy**.
+
+---
+
 
 ## 👥 Team Members
 
