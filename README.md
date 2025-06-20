@@ -1,6 +1,6 @@
 # tuberculosis-pinn-solver-numerical-solver
 #  Physics-Informed Neural Network for Tuberculosis Modeling
-# Tuberculosis PINN Solver
+
 
 Welcome! This project explores the use of Physics-Informed Neural Networks to solve a tuberculosis ODE model.
 
