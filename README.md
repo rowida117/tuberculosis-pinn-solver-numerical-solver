@@ -4,8 +4,6 @@
 
 Welcome! This project explores the use of Physics-Informed Neural Networks to solve a tuberculosis ODE model.
 
-![Results](figures/pinn_vs_numerical.png)
-
 📄 [Download Full Report](report.pdf)
 
 This project presents a computational solution to a tuberculosis (TB) compartmental model using:
@@ -44,6 +42,8 @@ Two solution methods were implemented:
 ---
 
 ## Results
+
+![Results](figures/pinn_vs_numerical.png)
 
 - PINN successfully approximated all compartments and extrapolated 5× beyond training range.
 - Final extrapolated mean square errors (MSE):
