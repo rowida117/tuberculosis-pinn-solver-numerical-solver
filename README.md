@@ -43,8 +43,6 @@ Two solution methods were implemented:
 
 ## Results
 
-![Results](figures/pinn_vs_numerical.png)
-
 - PINN successfully approximated all compartments and extrapolated 5× beyond training range.
 - Final extrapolated mean square errors (MSE):
 
