@@ -29,12 +29,12 @@ Two solution methods were implemented:
 ---
 ## Methods Used
 
-### 🔢 Numerical Solvers:
+###  Numerical Solvers:
 - **Heun's Method** (Predictor-Corrector)
 - **Classical Runge-Kutta 4th Order (RK4)**
 - **Adaptive Runge-Kutta Method**
 
-### 🤖 Machine Learning Solver:
+###  Machine Learning Solver:
 - **Physics-Informed Neural Networks (PINNs)**
   - Implemented using PyTorch
   - Trained on ODE physics, initial conditions, and data points
