@@ -88,7 +88,7 @@ Each Python script contains a solver implementation for one of the numerical met
 ---
 ## Trials 
 
-##  Attempted Method: Romberg Integration
+##   1. Attempted Method: Romberg Integration
 
 ###  What is Romberg Integration?
 
@@ -140,6 +140,36 @@ yₙ₊₁ ≈ yₙ + f(yₙ) × dt
 
 ---
 
+## 2.Gauss Quadrature: Why It Was Considered and Why It Was Excluded?
+
+### What is Gauss Quadrature?
+
+Gauss Quadrature, specifically the Gauss–Legendre method, is a high-accuracy numerical integration technique. It works by evaluating a function at carefully selected points (called Gauss nodes) within an interval and summing the weighted values to approximate a definite integral. This method is often preferred over basic rules like trapezoidal or Simpson’s because it achieves much higher accuracy with fewer evaluations when applied to smooth functions.
+
+In the context of solving ordinary differential equations (ODEs), Gauss Quadrature can be used in implicit integration schemes, particularly in stiff systems or when high-order precision is required.
+
+### Why We Considered Using It
+
+During the early stages of the project, we explored whether applying Gauss Quadrature to the TB model’s ODE system could yield advantages in speed or accuracy. The appeal was based on Gauss Quadrature’s well-known ability to:
+
+- Accurately approximate definite integrals
+- Converge rapidly with fewer evaluations
+- Reduce local truncation error in some numerical schemes
+
+### Why We Ultimately Did Not Use It
+
+In such systems, the derivatives depend only on the state variables (S, E, I, L), not on time (t) directly. Gauss Quadrature methods, however, are designed for integrating functions with respect to an independent variable, typically time. Their advantage comes from evaluating the function at strategically chosen points across the time interval to approximate:
+
+
+But because `f` in our case is not a function of `t`, Gauss Quadrature does not deliver any real performance or accuracy benefits. It ends up behaving similarly to basic methods like Euler’s, relying primarily on the step size `dt` for accuracy. Additionally, the method introduces extra computational overhead without a meaningful return.
+
+### Conclusion
+
+- The system is autonomous (no explicit time dependence),
+- The integrals in question do not benefit from Gauss’s strategic sampling,
+- The method adds complexity without enhancing solution quality.
+
+For these reasons, we decided to exclude Gauss Quadrature from our final set of evaluated methods and focus instead on Heun’s method, RK4, Adaptive RK, and Physics-Informed Neural Networks (PINNs), which are better suited for this type of problem.
 
 ## 👥 Team Members
 
