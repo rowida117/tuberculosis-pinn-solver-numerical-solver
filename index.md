@@ -6,7 +6,7 @@ Welcome! This project explores the use of Physics-Informed Neural Networks to so
 
 📄 [Download Full Paper](TB_paper.pdf)
 
-📄 [Download Full presentation](Research Presentation.pdf)
+📄 [Download Full presentation](Research_Presentation.pdf)
 
 This project presents a computational solution to a tuberculosis (TB) compartmental model using:
 - Classical numerical solvers
