@@ -5,7 +5,9 @@
 Welcome! This project explores the use of Physics-Informed Neural Networks to solve a tuberculosis ODE model.
 
 📄 [Download Full Paper](TB_paper.pdf)
+
 📄 [Download Full presentation](Research Presentation.pdf)
+
 This project presents a computational solution to a tuberculosis (TB) compartmental model using:
 - Classical numerical solvers
 - Physics-Informed Neural Networks (PINNs)
